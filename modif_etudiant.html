@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Modification</title>
+</head>
+<body>
+    <form action="modif_etudiant.php" method="POST">
+        <fieldset>
+            <legend>Informations de l'etudiant à modifier</legend>
+            
+            <em><label for="codetu">Ancien code de l'etudiant</label></em>
+            <input type="text" name="codetu" required placeholder="Ex:00INP00000">
+            <br><br>
+            <em><label for="new_codetu">Nouveau code de l'etudiant</label></em>
+            <input type="text" name="new_codetu" required placeholder="Ex:00INP00000">
+            <br><br>
+            <em><label for="nometu">Nom de l'etudiant</label></em>
+            <input type="text" name="nometu" required placeholder="Ex:Koffi">
+            <br><br>
+            <em><label for="prenometu">Prénom de l'etudiant</label></em>
+            <input type="text" name="prenometu" required placeholder="Ex:Richard">
+            <br><br>
+            <em><label for="photoetu">Photo l'etudiant</label></em>
+            <input type="file" name="photoetu">
+            <br><br>
+            <em><label for="cel">Téléphone de l'etudiant</label></em>
+            <input type="text" name="cel" required placeholder="Ex:+225 0707060504">
+            <br><br>
+            <div class="validation"><input type="submit" name="valider" value="Valider"></div>
+            <span class="vide"><input type="reset" name="reinitialiser" value="Annuler"></span>
+            <br>
+            <button><a href="form_etudiant.html">Retour au FORMULAIRE ETUDIANT </a></button>
+            <br>
+            <button><a href="index.html">Retour au Menu </a></button>  
+        </fieldset>
+    </form>
+       
+</body>
+</html>

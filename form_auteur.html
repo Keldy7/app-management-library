@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulaire</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+    <div><h1>FORMULAIRE D'INSCRIPTION AUTEUR</h1><br/></div>
+       
+        <form class="box" name="form" action="form_auteur.php" method="POST">
+            <p><i>Veuillez remplir tous les champs de ce formulaire</i></p>
+            <fieldset>
+                <legend>Informations sur l' auteur</legend>
+                <em><label for="codeaut">Code de l'auteur</label></em>
+                <input type="text" name="codeaut" required placeholder="Ex:00">
+                <br><br>
+                <em><label for="nomaut">Nom de l'auteur</label></em>
+                <input type="text" name="nomaut" required placeholder="Entrez un nom">
+                <br><br>
+                <em><label for="prenomaut">Prénoms de l'auteur </label></em>
+                <input type="text" name="prenomaut" required placeholder="Entrez un prenom">
+                <br><br>
+                <em><label for="pays">Pays d'origine</label></em>
+                <input type="text" name="pays" required placeholder="Entrez le pays">
+            </fieldset>
+            
+            <button><a href="modif_auteur.html">Modifier un enregistrement</a></button>
+            <button><a href="supp_auteur.html">Supprimer un enregistrement</a></button>
+            <button><a href="lister_auteur.php">Liste des enregistrements</a></button>
+            <div><input type="submit" name="submit" class="box-button" value="Valider">
+            <input type="reset" name="reset" class="box-button" value="Vider"></div>
+            <button><a href="index.html">Retour au Menu </a></button>
+
+        </form>
+    </body>
+</html>   
+
+         
+    

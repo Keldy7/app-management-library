@@ -1,0 +1,68 @@
+
+.serarien{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 200px;
+}
+
+
+.input-form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1.2em 0;
+}
+
+input, label, button {
+    transition: all .3s;
+}
+
+label {
+    transform: translate(50px, -30px);
+    cursor: text;
+    transform-origin: left top;
+    position: absolute;
+}
+
+input {
+    padding: 10px;
+    border: none; outline: none;
+    border-bottom: 2px solid grey;
+    border-color: orange;
+}
+
+button {
+    border: 0; padding: 10px 15px;
+    cursor: pointer; color: white;
+    background-color: orangered;
+}
+
+button:focus, button:hover {
+    background-color: yellow;
+}
+
+.submit-form {
+    text-align: right;
+}
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid black;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label {
+    transform: translate(10px, -30px) scale(.8);
+    padding-left: 0;
+    color: black;
+}
+input:focus{
+     border-bottom: 2px solid red;
+}
+.et{
+    text-align: center;
+    color : orange;
+}

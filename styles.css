@@ -1,0 +1,61 @@
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+input{
+
+    justify-content: center;
+    border-style: solid;
+    border: 0; padding: 10px 5px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    position: relative;
+}
+ form{
+    display: block;
+    min-width: 10px;
+    padding: 0.2rem;
+    border-radius:4px;/*arronir les bordures*/
+    text-align: center;
+    text-transform: uppercase;
+    background-color: unset;
+    color: black;
+    border: 5px solid;/*bordure format solide*/
+    transition: all 1s;
+}
+p{
+    background-color:greenyellow;
+    border-color: black;
+}   
+
+fieldset {
+    padding: 150px;
+    background-color: cornflowerblue;
+    border: 10px;
+    text-transform: full-width;
+    
+    
+}
+label {
+
+    cursor: none;
+    position: relative;
+}
+legend {
+    font-family: Cambria, Cochin, Georgia, Times, 'Cambria', serif;
+    font-size: 100%;
+    size: 70px;
+}
+input::placeholder {
+    opacity: 1;
+}
+div {
+    background-color:orangered;
+    border-color: black;  
+}
+td,th,tr {
+    position: initial;
+    justify-content: center;
+    
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Suppression</title>
+</head>
+<body>
+    <form action="supp_editeur.php" method="POST">
+        <fieldset>
+            <legend>Informations de l'editeur à supprimer</legend>
+            <em><label for="coded">Entrez le matricule de l'editeur</label></em>
+            <input type="text" name="coded" required placeholder="Ex:01">
+            <br><br>
+            <span class="validation"><input type="submit" name="valider" value="Executer"></span>
+            <br><br>
+            <span class="vide"><input type="reset" name="reinitialiser" value="Annuler"></span>
+            <br><br>
+            <button><a href="form_editeur.html">Retour au FORMULAIRE EDITEUR </a></button>
+            <br><br>
+            <button><a href="index.html">Retour au Menu </a></button>   
+        </fieldset>
+    </form>
+       
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulaire</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+    <div><h1>FORMULAIRE D'INSCRIPTION ETUDIANT</h1><br/><br/> </div>
+        <form class="box" name="form" action="form_etudiant.php" method="POST">
+            
+        
+            <p><i>Veuillez remplir tous les champs de ce formulaire</i></p>
+            <fieldset>
+                <legend>Informations sur l' etudiant</legend>
+                <label for="codetu">Matricule de l'etudiant</label>
+                <input type="text" name="codetu" required placeholder="Ex:xxINPxxxxx">
+                <br><br>
+                <label for="nometu">Nom de l'etudiant</label>
+                <input type="text" name="nometu" required placeholder="Entrez votre nom svp">
+                <br><br>
+                <label for="prenometu">Prénoms de l'etudiant</label>
+                <input type="text" name="prenometu" required placeholder="Entrez votre prenom svp">
+                <br><br>
+                <label for="photoetu">Photo de l'etudiant</label>
+                <input type="file" name="photoetu" placeholder="Entrez votre photo svp">
+                <br><br>
+                <label for="sexe">Sexe de l'etudiant</label>
+                <select name="sexe">
+                    <option value="F">Femme</option>
+                    <option value="M">Homme</option>
+                </select><br><br>
+                <label for="cel">Numéro de téléphone </label>
+                <input type="text" name="cel" required placeholder="Ex: +225 0101010101">
+            </fieldset>
+            <button><a href="modif_etudiant.html">Modifier un enregistrement</a></button>
+            <button><a href="supp_etudiant.html">Supprimer un enregistrement</a></button>
+            <button><a href="recherche_etud.php">Rechercher un etudiant</a></button>
+            <button><a href="lister_etu.php">Liste des enregistrements</a></button>
+            <div><input type="submit" name="submit" class="box-button" value="Valider">
+            <input type="reset" name="reset" class="box-button" value="Vider"></div>
+            <button><a href="index.html">Retour au Menu </a></button>
+
+        </form>
+    </body>
+</html>   
+
+         
+    

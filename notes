@@ -1,0 +1,5 @@
+ <?php 
+     foreach ($listDepartement as $key => $value) {
+         echo '<option value="'.$value['nom_commune'].'">'.$value['nom_commune'].'</option>';
+     }
+ ?>

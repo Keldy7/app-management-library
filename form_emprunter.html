@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulaire</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+    <div><h1>FORMULAIRE D'INSCRIPTION EMPRUNT</h1><br/></div>
+       
+        <form class="box" name="form" action="form_emprunter.php" method="POST">
+            <p><i>Veuillez remplir tous les champs de ce formulaire</i></p>
+            <fieldset>
+                <legend>Les Emprunts</legend>
+                <label for="codeliv">Code du livre</label>
+                <input type="text" name="codeliv" required placeholder="Ex:00">
+                <br><br>
+                <label for="datedeb">Date du début de l'emprunt</label>
+                <input type="date" name="datedeb" required>
+                <br><br>
+                <label for="codetu">Code de l'etudiant</label>
+                <input type="text" name="codetu" required placeholder="Ex:00">
+                <br><br>
+                <label for="titreliv">Titre du livre</label>
+                <input type="text" name="titreliv" required placeholder="Ex:La ronde des jours">
+                <br><br>
+                <label for="datefin">Date de fin de l'emprunt</label>
+                <input type="date" name="datefin" required>
+                <br><br>
+                <label for="statutliv">Statut du livre</label>
+                <input type="text" name="statutliv" required placeholder="Ex:Rendu ou Non-rendu">
+            </fieldset>
+            <button><a href="modif_emprunter.html">Modifier un enregistrement</a></button>
+            <button><a href="supp_emprunter.html">Supprimer un enregistrement</a></button>
+            <button><a href="lister_emprunter.php">Liste des enregistrements</a></button>
+            <div><input type="submit" name="submit" class="box-button" value="Valider">
+            <input type="reset" name="reset" class="box-button" value="Vider"></div>
+            <button><a href="index.html">Retour au Menu </a></button>
+
+        </form>
+    </body>
+</html>   
+
+         
+    

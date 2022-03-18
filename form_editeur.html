@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulaire</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+    <div><h1>FORMULAIRE D'INSCRIPTION EDITEUR</h1><br/></div>
+       
+        <form class="box" name="form" action="form_editeur.php" method="POST">
+            <p><i>Veuillez remplir tous les champs de ce formulaire</i></p>
+            <fieldset>
+                <legend>Informations sur l' editeur</legend>
+                <label for="coded">Code de l'editeur</label>
+                <input type="text" name="coded" required placeholder="Ex:00">
+                <br><br>
+                <label for="nomed">Nom de l'editeur</label>
+                <input type="text" name="nomed" required placeholder="Entrez un nom">
+                <br><br>
+                <label for="pays">Pays d'origine</label>
+                <input type="text" name="pays" required placeholder="Entrez le pays">
+            </fieldset>
+            <button><a href="modif_editeur.html">Modifier un enregistrement</a></button>
+            <button><a href="supp_editeur.html">Supprimer un enregistrement</a></button>
+            <button><a href="lister_editeur.php">Liste des enregistrements</a></button>
+            <div><input type="submit" name="submit" class="box-button" value="Valider">
+            <input type="reset" name="reset" class="box-button" value="Vider"></div>
+            <button><a href="index.html">Retour au Menu </a></button>
+
+               
+        </form>       
+    </body>
+</html>   
+
+         
+    

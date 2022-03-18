@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulaire</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+    <div><h1>FORMULAIRE D'INSCRIPTION LIVRE</h1><br/></div>
+       
+        <form class="box" name="form" action="form_livre.php" method="POST">
+            <p><i>Veuillez remplir tous les champs de ce formulaire</i></p>
+            <fieldset>
+                <legend>Informations sur un livre</legend>
+                <label for="codeliv">Code du livre</label>
+                <input type="text" name="codeliv" required placeholder="Ex:00">
+                <br><br>
+                <label for="codeaut">Code de l'auteur</label>
+                <input type="text" name="codeaut" required placeholder="Ex:00">
+                <br><br>
+                <label for="coded">Code de l'editeur</label>
+                <input type="text" name="coded" required placeholder="Ex:00">
+                <br><br>
+                <label for="titreliv">Titre du livre</label>
+                <input type="text" name="titreliv" required placeholder="Ex:La ronde des jours">
+                <br><br>
+                <label for="dateliv">Date</label>
+                <input type="date" name="dateliv" required>
+            </fieldset>
+            <button><a href="modif_livre.html">Modifier un enregistrement</a></button>
+            <button><a href="supp_livre.html">Supprimer un enregistrement</a></button>
+            <button><a href="recherche_livre.php">Rechercher un livre</a></button>
+            <button><a href="lister_livre.php">Liste des enregistrements</a></button>
+            <div><input type="submit" name="submit" class="box-button" value="Valider">
+            <input type="reset" name="reset" class="box-button" value="Vider"></div>
+            <button><a href="index.html">Retour au Menu </a></button>
+        </form>
+    </body>
+</html>   
+
+         
+    

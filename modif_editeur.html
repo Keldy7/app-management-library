@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Modification</title>
+</head>
+<body>
+    <form action="modif_editeur.php" method="POST">
+        <fieldset>
+            <legend>Informations de l'editeur à modifier</legend>
+            
+            <em><label for="coded">Ancien code de l'editeur</label></em>
+            <input type="text" name="coded" required placeholder="Ex:00">
+            <br><br>
+            <em><label for="new_coded">Nouveau code de l'editeur</label></em>
+            <input type="text" name="new_coded" required placeholder="Ex:00">
+            <br><br>
+            <em><label for="nomed">Nom de l'editeur</label></em>
+            <input type="text" name="nomed" required placeholder="Ex:Eburnie">
+            <br><br>
+            <em><label for="pays">Pays de l'editeur</label></em>
+            <input type="text" name="pays" required placeholder="Ex:Ghana">
+            <br><br>
+            <div class="validation"><input type="submit" name="valider" value="Valider"></div>
+            <span class="vide"><input type="reset" name="reinitialiser" value="Annuler"></span>
+            <br>
+            <button><a href="form_editeur.html">Retour au FORMULAIRE EDITEUR </a></button>
+            <br>
+            <button><a href="index.html">Retour au Menu </a></button>  
+        </fieldset>
+    </form>
+       
+</body>
+</html>
